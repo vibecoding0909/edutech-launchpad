@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-illustration.png';
 
 const Hero = () => {
@@ -15,20 +15,14 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            <div className="hero-fade-in">
-              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-                BEST SERVICE
-              </span>
-            </div>
-            
-            <h1 className="hero-fade-in-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
+            <h1 className="hero-fade-in text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Empowering Students with{' '}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Modern Learning
               </span>
             </h1>
             
-            <p className="hero-fade-in-delay-2 text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="hero-fade-in-delay-1 text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
               Explore coding tutorials, AI roadmaps, interactive practice labs, and more. 
               Join thousands of students who are already learning with EduTech.
             </p>
@@ -37,10 +31,6 @@ const Hero = () => {
               <Button className="btn-primary group">
                 Explore Courses
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button className="btn-accent group">
-                <Play className="mr-2 h-4 w-4" />
-                Get Started Free
               </Button>
             </div>
 
