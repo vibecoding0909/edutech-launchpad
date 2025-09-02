@@ -7,7 +7,6 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full hero-float"></div>
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/20 rounded-full hero-float" style={{ animationDelay: '2s' }}></div>
       <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-secondary/15 rounded-full hero-float" style={{ animationDelay: '4s' }}></div>
 
