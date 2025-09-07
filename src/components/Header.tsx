@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, BookOpen } from 'lucide-react';
 
@@ -38,8 +39,8 @@ const Header = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-primary">
-              Get Started
+            <Button asChild className="btn-primary">
+              <Link to="/login">Get Started</Link>
             </Button>
           </div>
 
@@ -70,8 +71,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="btn-primary w-fit mt-4">
-                Get Started
+              <Button asChild className="btn-primary w-fit mt-4">
+                <Link to="/login">Get Started</Link>
               </Button>
             </nav>
           </div>
