@@ -62,7 +62,7 @@ const Signup = () => {
         title: "Account created!",
         description: "Welcome to EduTech. Your learning journey begins now.",
       });
-      navigate('/');
+      navigate('/dashboard');
     } catch (error: any) {
       toast({
         title: "Signup failed",
