@@ -24,7 +24,7 @@ const Hero = () => {
             
             <p className="hero-fade-in-delay-1 text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
               Explore coding tutorials, AI roadmaps, interactive practice labs, and more. 
-              Join thousands of students who are already learning with EduTech.
+              Join thousands of students who are already learning with Eduverse.
             </p>
 
             <div className="hero-fade-in-delay-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="relative z-10">
               <img 
                 src={heroImage} 
-                alt="EduTech Learning Platform - Students learning with modern technology"
+                alt="Eduverse Learning Platform - Students learning with modern technology"
                 className="w-full h-auto rounded-2xl shadow-elegant"
               />
             </div>

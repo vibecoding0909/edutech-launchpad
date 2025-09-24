@@ -116,7 +116,7 @@ const DoubtSolver = () => {
                   <Bot className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-card-foreground">EduTech AI Assistant</h3>
+                  <h3 className="font-semibold text-card-foreground">Eduverse AI Assistant</h3>
                   <p className="text-sm text-muted-foreground">Online • Typically replies instantly</p>
                 </div>
               </div>

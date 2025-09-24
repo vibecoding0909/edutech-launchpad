@@ -60,7 +60,7 @@ const Signup = () => {
       
       toast({
         title: "Account created!",
-        description: "Welcome to EduTech. Your learning journey begins now.",
+        description: "Welcome to Eduverse. Your learning journey begins now.",
       });
       navigate('/dashboard');
     } catch (error: any) {
@@ -86,11 +86,11 @@ const Signup = () => {
           <CardHeader className="text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <BookOpen className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-foreground">EduTech</span>
+              <span className="text-2xl font-bold text-foreground">Eduverse</span>
             </div>
             <CardTitle className="text-2xl font-bold text-foreground">Create Account</CardTitle>
             <CardDescription className="text-muted-foreground">
-              Join thousands of learners on EduTech
+              Join thousands of learners on Eduverse
             </CardDescription>
           </CardHeader>
           <CardContent>

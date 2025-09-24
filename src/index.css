@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* EduTech Color Palette */
+    /* Eduverse Color Palette */
     --background: 220 13% 98%;
     --foreground: 220 13% 9%;
 
@@ -39,7 +39,7 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom EduTech Design Tokens */
+    /* Custom Eduverse Design Tokens */
     --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(199 89% 48%));
     --gradient-accent: linear-gradient(135deg, hsl(48 96% 53%), hsl(45 93% 47%));
     --gradient-hero: linear-gradient(135deg, hsl(220 13% 98%), hsl(220 13% 95%));

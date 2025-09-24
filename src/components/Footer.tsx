@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-6">
                 <BookOpen className="h-8 w-8 text-primary" />
-                <span className="text-2xl font-bold text-foreground">EduTech</span>
+                <span className="text-2xl font-bold text-foreground">Eduverse</span>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
                 Empowering the next generation of developers with cutting-edge education, 
@@ -144,7 +144,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground text-sm">
-                © 2025 EduTech. All rights reserved. Made with ❤️ for learners worldwide.
+                © 2025 Eduverse. All rights reserved. Made with ❤️ for learners worldwide.
               </p>
             </div>
             

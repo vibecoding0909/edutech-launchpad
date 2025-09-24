@@ -51,7 +51,7 @@ const Login = () => {
           <CardHeader className="text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <BookOpen className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-foreground">EduTech</span>
+              <span className="text-2xl font-bold text-foreground">Eduverse</span>
             </div>
             <CardTitle className="text-2xl font-bold text-foreground">Welcome Back</CardTitle>
             <CardDescription className="text-muted-foreground">
