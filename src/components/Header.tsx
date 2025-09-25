@@ -6,6 +6,16 @@ import { Menu, X, BookOpen } from 'lucide-react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (href: string) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = `/${href}`;
+    } else {
+      const element = document.querySelector(href);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   const menuItems = [
     { name: 'Home', href: '#home' },
     { name: 'Courses', href: '#courses' },
@@ -27,13 +37,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                className="nav-link text-sm font-medium"
+                onClick={() => handleNavClick(item.href)}
+                className="nav-link text-sm font-medium cursor-pointer"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -62,14 +72,13 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               {menuItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleNavClick(item.href)}
+                  className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
               <Button asChild className="btn-primary w-fit mt-4">
                 <Link to="/login">Get Started</Link>
