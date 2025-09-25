@@ -152,41 +152,25 @@ All colors MUST be HSL.
 
   /* Button Animations */
   .btn-primary {
-    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground font-medium px-8 py-3 rounded-xl;
-    box-shadow: var(--shadow-elegant);
-    transition: var(--transition-smooth);
+    @apply bg-gradient-primary text-white border-0 hover:shadow-elegant transition-all duration-300 hover:scale-105;
   }
 
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-  }
-
-  .btn-accent {
-    @apply bg-gradient-to-r from-accent to-yellow-400 text-accent-foreground font-medium px-8 py-3 rounded-xl;
-    box-shadow: var(--shadow-card);
-    transition: var(--transition-smooth);
-  }
-
-  .btn-accent:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
+  .btn-secondary {
+    @apply bg-secondary/20 text-secondary border border-secondary/30 hover:bg-secondary/30 transition-all duration-300 hover:scale-105;
   }
 
   /* Card Animations */
   .card-hover {
-    transition: var(--transition-smooth);
+    @apply hover:shadow-elegant hover:-translate-y-1 transition-all duration-300;
   }
 
-  .card-hover:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
+  .hover-card-lift {
+    @apply hover:shadow-elegant hover:-translate-y-2 transition-all duration-300 hover:scale-[1.02];
   }
 
   /* Navigation Animations */
   .nav-link {
-    @apply relative text-foreground hover:text-primary;
-    transition: var(--transition-smooth);
+    @apply relative text-muted-foreground hover:text-foreground transition-colors duration-300;
   }
 
   .nav-link::after {
@@ -196,13 +180,46 @@ All colors MUST be HSL.
     height: 2px;
     bottom: -4px;
     left: 50%;
-    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
-    transition: var(--transition-smooth);
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    transition: all 0.3s ease;
     transform: translateX(-50%);
   }
 
   .nav-link:hover::after {
     width: 100%;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+
+  /* Enhanced animations for interactive elements */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(var(--card)) padding-box, 
+                var(--gradient-primary) border-box;
+    border: 2px solid transparent;
+  }
+
+  .interactive-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3); 
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.6); 
   }
 }
 

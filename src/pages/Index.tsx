@@ -1,9 +1,9 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Courses from '@/components/Courses';
+import InteractiveHero from '@/components/InteractiveHero';
+import InteractiveCourses from '@/components/InteractiveCourses';
 import AIRoadmap from '@/components/AIRoadmap';
 import SkillLens from '@/components/SkillLens';
-import CodeLab from '@/components/CodeLab';
+import InteractiveCodeLab from '@/components/InteractiveCodeLab';
 import DoubtSolver from '@/components/DoubtSolver';
 import Footer from '@/components/Footer';
 
@@ -12,11 +12,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <Hero />
-        <Courses />
+        <InteractiveHero />
+        <InteractiveCourses />
         <AIRoadmap />
         <SkillLens />
-        <CodeLab />
+        <InteractiveCodeLab />
         <DoubtSolver />
       </main>
       <Footer />
